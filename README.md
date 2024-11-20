@@ -20,8 +20,7 @@ InsightOps is a fast and scalable anomaly detection and log analysis tool design
 - Visualization: Create and save anomaly detection plots for easy interpretation.
 - File Uploading: Handle various file formats (PDF, images, log files) for automated processing.
 - CSV Export: Convert parsed logs into structured CSV format for further analysis.
-
-Logs can be converted into structured data, analyzed for performance issues, and visualized in an intuitive 
+- Logs can be converted into structured data, analyzed for performance issues, and visualized in an intuitive 
 
 
 ## Tech
@@ -34,8 +33,7 @@ InsightOps uses several technologies to ensure seamless functionality:
 - [pandas] - Data manipulation and analysis library
 - [scikit-learn] - Machine learning model implementation
 - [uvicorn] - ASGI server for FastAPI applications
-
-And of course Dillinger itself is open source with a [public repository][dill]
+- And of course Dillinger itself is open source with a [public repository][dill]
 on GitHub.
 
 
@@ -43,9 +41,14 @@ on GitHub.
 
 ```sh
 git clone https://github.com/<YOUR-USER-NAME>/InsightOps
-cd InsightOps
 ```
 
+
+## Go to the working directory
+
+```sh
+cd InsightOps
+```
 
 ## Create a virtual environment
 
