@@ -1,18 +1,17 @@
 # InsightOps
-## _Anomaly Detection and Log Analysis Tool_
 
+
+## _Anomaly Detection and Log Analysis Tool_
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 InsightOps is a fast and scalable anomaly detection and log analysis tool designed to help organizations identify patterns, performance issues, and operational anomalies from log files. It integrates machine learning models for anomaly detection and generates insightful visualizations to assist in troubleshooting and monitoring.
 
-
-
 - Parse logs and detect anomalies
-
 - Extract text from PDFs and images
 - Visualize anomalies with plots
 - ✨Automation ✨
+
 
 ## Features
 
@@ -29,7 +28,6 @@ Logs can be converted into structured data, analyzed for performance issues, and
 
 InsightOps uses several technologies to ensure seamless functionality:
 
-
 - [Python 3.7+] - Backend programming
 - [FastAPI] - Modern, fast web framework for building APIs
 - [matplotlib] - For data visualization
@@ -38,56 +36,51 @@ InsightOps uses several technologies to ensure seamless functionality:
 - [uvicorn] - ASGI server for FastAPI applications
 
 And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
-## Installation
-
-InsightOps requires Python 3.7+ to run.
+on GitHub.
 
 
-Install the dependencies and start the server:
-
-bash
-Copy code
-# Clone the repository
-add the link here 
-cd insightops
-
-# Create a virtual environment
-python -m venv venv
-source venv/bin/activate   # On Windows use `venv\Scripts\activate`
-
-# Install the dependencies
-pip install -r requirements.txt
+## Clone the repository
 
 ```sh
-python -m venv venv
-source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+git clone https://github.com/<YOUR-USER-NAME>/InsightOps
+cd InsightOps
+```
 
-# Install the dependencies
+
+## Create a virtual environment
+
+```sh
+python -m venv newenv
+source newenv/bin/activate   # On Windows use `newenv\Scripts\activate`
+```
+
+
+## Install the dependencies
+
+```sh
 pip install -r requirements.txt
 ```
 
-For production environments...
+
+## For production environments...
 
 ```sh
 export UPLOAD_FOLDER="/path/to/uploads"
 export LOG_FILE="/path/to/logfile.log"
 export CSV_OUTPUT="/path/to/output.csv"
 export ANOMALY_PLOT="/path/to/anomaly/plot"
-
 ```
+
 
 ## Usage
-```
+
+```sh
 uvicorn app.main:app --reload
 ```
 
 
+## Contributing
 
-
-
-##Contributing
 We welcome contributions to InsightOps! To contribute:
 
 Fork the repository.
@@ -98,8 +91,6 @@ Create a pull request to the main repository.
 
 
 ## License
-
-
 
 **Free Software, Hell Yeah!**
 
